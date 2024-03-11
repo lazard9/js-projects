@@ -1,0 +1,216 @@
+body {
+    background-color: #f8f8f8;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --blue: #024fd0;
+    --dark: #2c2738;
+}
+
+img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+}
+
+.padding-lr {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .padding-lr {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .padding-lr {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Accordion
+--------------------------------------------- */
+.home-accordion {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1025px) {
+    .home-accordion {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+
+.accordion-flex {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.accordion-flex .accordion-l {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .accordion-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .accordion-flex .accordion-l {
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    .accordion-flex .accordion-r {
+        width: 41%;
+        margin-top: -15px;
+    }
+}
+
+.accordion-image {
+    width: 100%;
+}
+
+.accordion-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark);
+}
+
+@media screen and (min-width: 768px) {
+    .accordion-title {
+        font-size: 28px;
+    }
+}
+
+.accordion-tagline {
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark);
+}
+
+@media screen and (min-width: 768px) {
+    .accordion-tagline {
+        font-size: 18px;
+    }
+}
+
+.accordion-center {
+    margin-top: 40px;
+}
+
+.question {
+    margin: 0 0 10px;
+    padding: 21px 20px 20px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+@media screen and (min-width: 1025px) {
+    .question {
+        padding: 17px 20px 16px 30px;
+    }
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-title p {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark);
+    margin: 0;
+}
+
+@media screen and (min-width: 1025px) {
+    .question-title p {
+        font-size: 20px;
+    }
+}
+
+.question-btn {
+    font-size: 1.75rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: var(--blue);
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.question-btn span {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+
+.question-text p {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark);
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .question-text p {
+        font-size: 18px;
+    }
+}
+
+/* hide text */
+.question-text {
+    display: none;
+}
+
+.show-text .question-text {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon {
+    display: none;
+}
